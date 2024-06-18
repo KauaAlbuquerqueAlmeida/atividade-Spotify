@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/enter.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+        <div class="forms">
+            <div class="containers-forms">
+                <br>
+                <img id="logo" src="./imagens/images.png" alt="logo"> <br>
+                <h1>Entrar no Spotify</h1><br>
+                <form action="#" method="post">
+                    
+                    <button class="custom-button">
+                        <img src="./imagens/google-37.png" alt="Google">
+                        <a href="./homepage.html">Continuar com o Google</a>
+                    </button>
+                    <button class="custom-button">
+                        <img src="./imagens/Facebook_Logo_2023.png" alt="Facebook">
+                        <a href="./homepage.html">Continuar com o Facebook</a>
+                    </button>
+                    <button class="custom-button">
+                        <img src="./imagens/Apple.png" alt="Apple">
+                        <a href="./homepage.html">Continuar com a Apple</a>
+                    </button>
+                    <button class="custom-button no-image">
+                        <a href="./homepage.html">Continuar com o e-mail ou telefone</a>
+                    </button> <br>
+
+                    <div class="linha"></div> <br>
+
+                    <div class="secao"></div>
+    
+                    <label for="usuario">E-mail ou nome de usuário</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="E-mail ou nome de usuário" required>
+        
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Senha" required> <br>
+                   
+                    <div class="lembrar">
+                        <button class="button" onclick="toggleButton(this)">
+                            <div class="ball"></div>
+                        </button> <br>
+                        <p>Lembrar de mim</p>
+                    </div>
+                    
+                    <script>
+                        function toggleButton(button) {
+                            button.classList.toggle('clicked');
+                        }
+                    </script>
+
+                    <button class="custom">
+                        <a id="botao" href="./homepage.html">Entrar</a>
+                    </button> <br>
+
+                    <a href="">Esqueceu sua senha?</a> <br>
+                    <br>
+                    <br>
+
+                    <div class="linha"></div> <br>
+                    <br>
+                    <br>
+                    <div class="partef">
+                        <p>Não tem uma conta? <a href="">Inscrever-se no Spotify</a></p> 
+                    </div> <br>
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Este site é protegido pelo <a href="https://www.google.com/recaptcha/about/">reCAPTCHA</a> e está sujeito à  <a href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade</a> e aos <a href="https://policies.google.com/terms?hl=pt-BR">Termos de Serviço</a> do Google.</p>
+    </footer>
+</body>
+</html>
